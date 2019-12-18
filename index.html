@@ -2,28 +2,29 @@
 <html>
     <head>
         <title>3d printers</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
-        <header>
+        <header id="header">
             <div class="head-top flex">
                 <div class="container">
                     <div class="logo">
-                        <p>form<span>labs</span></p>
+                        <a href="#header"><img src="./images/ico2.svg" alt="logo"></a>
                     </div>
                     <nav>
                         <ul class="flex">
-                            <li><a href="#">Оборудование</a></li>
-                            <li><a href="#">Материалы</a></li>
-                            <li><a href="#">Аксессуары</a></li>
+                            <li><a href="#equipment">Оборудование</a></li>
+                            <li><a href="#materials">Материалы</a></li>
+                            <li><a href="#reservoirs">Аксессуары</a></li>
                             <li><a href="#">Софт</a></li>
                             <li><a href="#">Поддержка</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="contact">
-                        <p>+7 800 400-00-00</p>
-                        <p>info-mail@gmail.com</p>
+                        <a>+7 800 400-00-00</a>
+                        <a>info-mail@gmail.com</a>
                     </div>
                 </div>
             </div>
@@ -33,17 +34,21 @@
                         <h1>Инновационные технологии<br> в стоматологии от Formlabs.</h1>
                         <div class="head-main__buttons">
                             <button class="color-blue">Смотреть оборудование</button>
-                            <button>Бесплатная консультация</button>
+                            <button class="form_btn">Бесплатная консультация</button>
                         </div>
                     </div>
                     <div class="circle">
-                        <button>1</button>
+                        <a href="#equipment">
+                            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 1L9 9L1 1" stroke="white" id="str"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
         </header>
         <main>
-            <section class="main-slider">
+            <section class="equipment" id="equipment">
                 <div class="slider">
                     <div class="slider__wrapper">
                       <div class="slider__item">
@@ -61,7 +66,7 @@
                                 </div>
                                 <div class="slider__item-content_button">
                                     <button class="color-blue">Купить</button>
-                                    <button>Подробнее</button>
+                                    <button class="details_btn">Подробнее</button>
                                 </div>
                             </div>
                         </div>
@@ -81,17 +86,25 @@
                                 </div>
                                 <div class="slider__item-content_button">
                                     <button class="color-blue">Купить</button>
-                                    <button>Подробнее</button>
+                                    <button class="details_btn">Подробнее</button>
                                 </div>
                             </div>
                         </div>
                       </div>
                     </div>
-                    <a class="slider__control slider__control_left" href="#" role="button"></a>
-                    <a class="slider__control slider__control_right" href="#" role="button"></a>
+                    <a class="slider__control slider__control_left" role="button">
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 1L9 9L1 1" stroke="white"/>
+                        </svg>
+                    </a>
+                    <a class="slider__control slider__control_right" role="button"> 
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 1L9 9L1 1" stroke="#606060"/>
+                        </svg>
+                    </a>
                   </div>
             </section>
-            <section class="materials flex">
+            <section class="materials flex" id="materials">
                 <div class="container">
                     <h1>Материалы для печати</h1>
                     <div class="materials_cards">
@@ -104,98 +117,97 @@
                             </div>
                             <div class="materials_card__buttons">
                                 <button class="color-blue">Купить</button>
-                                <button>Подробнее</button>
+                                <button class="details_btn">Подробнее</button>
                             </div>
                         </div>
                         <div class="materials_card">
-                            <img src="./images/img01.webp" alt="Crown and Bridge Models">
-                            <h4>Crown and Bridge Models</h4>
+                            <img src="./images/img02.webp" alt="Clear Aligner Models">
+                            <h4>Clear Aligner Models</h4>
                             <div class="price">
                                 <p>3 800 ₽</p>
                                 <p class="line">5 000 ₽</p>
                             </div>
                             <div class="materials_card__buttons">
                                 <button class="color-blue">Купить</button>
-                                <button>Подробнее</button>
+                                <button class="details_btn">Подробнее</button>
                             </div>
                         </div>
                         <div class="materials_card">
-                            <img src="./images/img01.webp" alt="Crown and Bridge Models">
-                            <h4>Crown and Bridge Models</h4>
+                            <img src="./images/img03.webp" alt="Surgical Guides">
+                            <h4>Surgical Guides</h4>
                             <div class="price">
                                 <p>3 800 ₽</p>
                                 <p class="line">5 000 ₽</p>
                             </div>
                             <div class="materials_card__buttons">
                                 <button class="color-blue">Купить</button>
-                                <button>Подробнее</button>
+                                <button class="details_btn">Подробнее</button>
                             </div>
                         </div>
                         <div class="materials_card">
-                            <img src="./images/img01.webp" alt="Crown and Bridge Models">
-                            <h4>Crown and Bridge Models</h4>
+                            <img src="./images/img04.webp" alt="Splints and Occlusal Guards">
+                            <h4>Splints and Occlusal Guards</h4>
+                            <div class="price">
+                                <p>3 800 ₽</p>
+                            </div>
+                            <div class="materials_card__buttons">
+                                <button class="color-blue">Купить</button>
+                                <button class="details_btn">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="materials_card">
+                            <img src="./images/img05.webp" alt="Patterns for Casting and Pressing">
+                            <h4>Patterns for Casting and Pressing</h4>
                             <div class="price">
                                 <p>3 800 ₽</p>
                                 <p class="line">5 000 ₽</p>
                             </div>
                             <div class="materials_card__buttons">
                                 <button class="color-blue">Купить</button>
-                                <button>Подробнее</button>
+                                <button class="details_btn">Подробнее</button>
                             </div>
                         </div>
                         <div class="materials_card">
-                            <img src="./images/img01.webp" alt="Crown and Bridge Models">
-                            <h4>Crown and Bridge Models</h4>
+                            <img src="./images/img06.webp" alt="Hawley Retainers">
+                            <h4>Hawley Retainers</h4>
                             <div class="price">
                                 <p>3 800 ₽</p>
                                 <p class="line">5 000 ₽</p>
                             </div>
                             <div class="materials_card__buttons">
                                 <button class="color-blue">Купить</button>
-                                <button>Подробнее</button>
+                                <button class="details_btn">Подробнее</button>
                             </div>
                         </div>
                         <div class="materials_card">
-                            <img src="./images/img01.webp" alt="Crown and Bridge Models">
-                            <h4>Crown and Bridge Models</h4>
+                            <img src="./images/img07.webp" alt="Full Dentures">
+                            <h4>Full Dentures</h4>
                             <div class="price">
                                 <p>3 800 ₽</p>
                                 <p class="line">5 000 ₽</p>
                             </div>
                             <div class="materials_card__buttons">
                                 <button class="color-blue">Купить</button>
-                                <button>Подробнее</button>
+                                <button class="details_btn">Подробнее</button>
                             </div>
                         </div>
                         <div class="materials_card">
-                            <img src="./images/img01.webp" alt="Crown and Bridge Models">
-                            <h4>Crown and Bridge Models</h4>
+                            <img src="./images/img08.webp" alt="Medical Research">
+                            <h4>Medical Research</h4>
                             <div class="price">
                                 <p>3 800 ₽</p>
                                 <p class="line">5 000 ₽</p>
                             </div>
                             <div class="materials_card__buttons">
                                 <button class="color-blue">Купить</button>
-                                <button>Подробнее</button>
-                            </div>
-                        </div>
-                        <div class="materials_card">
-                            <img src="./images/img01.webp" alt="Crown and Bridge Models">
-                            <h4>Crown and Bridge Models</h4>
-                            <div class="price">
-                                <p>3 800 ₽</p>
-                                <p class="line">5 000 ₽</p>
-                            </div>
-                            <div class="materials_card__buttons">
-                                <button class="color-blue">Купить</button>
-                                <button>Подробнее</button>
+                                <button class="details_btn">Подробнее</button>
                             </div>
                         </div>
                         
                     </div>
                 </div>
             </section>
-            <section class="reservoirs flex">
+            <section class="reservoirs flex" id="reservoirs">
                 <div class="container">
                     <h1>Здесь находится тестовый<br> заголовок</h1>
                     <div class="reservoirs_cards">
@@ -208,9 +220,27 @@
                             </div>
                             <div class="reservoirs_card__buttons">
                                 <button class="color-blue">Купить</button>
-                                <button>Подробнее</button>
+                                <button class="popup_btn" data-popup="1">Подробнее</button>
                             </div>
-                            <img src="./images/img11.webp" alt="">
+                            <img src="./images/img11.webp" alt="Резервуар для смолы">
+                            <div class="popup" data-popup = "1">
+                                <div class="details flex">
+                                    <img src="./images/img13.webp">
+                                    <div class="circle close">
+                                        <a>
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.940428 1.13551C0.886557 1.08164 0.886557 0.994299 0.940428 0.940428C0.994299 0.886557 1.08164 0.886557 1.13551 0.940428L11.0596 10.8645C11.1135 10.9184 11.1135 11.0057 11.0596 11.0596C11.0058 11.1135 10.9184 11.1135 10.8645 11.0596L0.940428 1.13551Z" fill="white" stroke="#606060"/>
+                                            <path d="M1.13551 11.0596L1.48907 11.4132L1.13551 11.0596C1.08164 11.1135 0.994299 11.1135 0.940428 11.0596L0.588504 11.4115L0.940428 11.0596C0.886557 11.0058 0.886556 10.9184 0.940428 10.8645L10.8645 0.940428C10.9184 0.886557 11.0058 0.886557 11.0596 0.940428L11.4115 0.588504L11.0596 0.940428C11.1135 0.994299 11.1135 1.08164 11.0596 1.13551L11.4132 1.48907L11.0596 1.13551L1.13551 11.0596Z" fill="white" stroke="#606060"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Crown and Bridge Models</h3>
+                                        <p>Ударная волна выталкивает субсветовой резонатор. Гидродинамический удар притягивает резонатор только в отсутствие тепло- и массообмена с окружающей средой. Электрон изотропно излучает электрон.</p> 
+                                        <p>В литературе неоднократно описано, как идеальная тепловая машина индуцирует луч. Самосогласованная модель предсказывает, что при определенных условиях зеркало переворачивает поток. Гетерогенная структура воспроизводима в лабораторных условиях.</p> <p>Колебание сингулярно отталкивает кварк. Под воздействием переменного напряжения гомогенная среда скалярна. Волновая тень концентрирует элементарный гидродинамический удар, как и предсказывает общая теория поля. Молекула, как следует из совокупности экспериментальных наблюдений, излучает тангенциальный вихрь. Лазер растягивает квант. Течение среды облучает барионный разрыв.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="reservoirs_card">
                             <h3>Резервуар для смолы</h3>
@@ -220,9 +250,27 @@
                             </div>
                             <div class="reservoirs_card__buttons">
                                 <button class="color-blue">Купить</button>
-                                <button>Подробнее</button>
+                                <button class="popup_btn" data-popup = "2">Подробнее</button>
                             </div>
-                            <img src="./images/img11.webp" alt="">
+                            <img src="./images/img12.webp" alt="Резервуар для смолы">
+                            <div class="popup" data-popup = "2">
+                                <div class="details flex">
+                                    <img src="./images/img13.webp">
+                                    <div class="circle close">
+                                        <a>
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.940428 1.13551C0.886557 1.08164 0.886557 0.994299 0.940428 0.940428C0.994299 0.886557 1.08164 0.886557 1.13551 0.940428L11.0596 10.8645C11.1135 10.9184 11.1135 11.0057 11.0596 11.0596C11.0058 11.1135 10.9184 11.1135 10.8645 11.0596L0.940428 1.13551Z" fill="white" stroke="#606060"/>
+                                            <path d="M1.13551 11.0596L1.48907 11.4132L1.13551 11.0596C1.08164 11.1135 0.994299 11.1135 0.940428 11.0596L0.588504 11.4115L0.940428 11.0596C0.886557 11.0058 0.886556 10.9184 0.940428 10.8645L10.8645 0.940428C10.9184 0.886557 11.0058 0.886557 11.0596 0.940428L11.4115 0.588504L11.0596 0.940428C11.1135 0.994299 11.1135 1.08164 11.0596 1.13551L11.4132 1.48907L11.0596 1.13551L1.13551 11.0596Z" fill="white" stroke="#606060"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="text">
+                                        <h3>Crown and Bridge Models</h3>
+                                        <p>Ударная волна выталкивает субсветовой резонатор. Гидродинамический удар притягивает резонатор только в отсутствие тепло- и массообмена с окружающей средой. Электрон изотропно излучает электрон.</p> 
+                                        <p>В литературе неоднократно описано, как идеальная тепловая машина индуцирует луч. Самосогласованная модель предсказывает, что при определенных условиях зеркало переворачивает поток. Гетерогенная структура воспроизводима в лабораторных условиях.</p> <p>Колебание сингулярно отталкивает кварк. Под воздействием переменного напряжения гомогенная среда скалярна. Волновая тень концентрирует элементарный гидродинамический удар, как и предсказывает общая теория поля. Молекула, как следует из совокупности экспериментальных наблюдений, излучает тангенциальный вихрь. Лазер растягивает квант. Течение среды облучает барионный разрыв.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="reservoirs_card">
                             <h3>Резервуар для смолы</h3>
@@ -233,9 +281,9 @@
                             </div>
                             <div class="reservoirs_card__buttons">
                                 <button class="color-blue">Купить</button>
-                                <button>Подробнее</button>
+                                <button class="details_btn">Подробнее</button>
                             </div>
-                            <img src="./images/img11.webp" alt="">
+                            <img src="./images/img13.webp" alt="Резервуар для смолы">
                         </div>
                         <div class="reservoirs_card">
                             <h3>Резервуар для смолы</h3>
@@ -245,19 +293,19 @@
                             </div>
                             <div class="reservoirs_card__buttons">
                                 <button class="color-blue">Купить</button>
-                                <button>Подробнее</button>
+                                <button class="details_btn">Подробнее</button>
                             </div>
-                            <img src="./images/img11.webp" alt="">
+                            <img src="./images/img13.webp" alt="Резервуар для смолы">
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="stomatology flex">
+            <section class="stomatology flex" id="stomatology">
                 <div class="container">
                     <h1>Здесь находится тестовый<br>заголовок</h1>
                     <div class="stomatology_cards">
                         <div class="stomatology_card">
-                            <img src="./images/img14.webp" alt="">
+                            <img src="./images/img14.webp" alt="Зуботехническая лаборатория">
                             <div class="stomatology_cards__text">
                                 <h3>Зуботехническая лаборатория</h3>
                                 <p>Производство-Готовые Решения, Которые Масштабируются</p>
@@ -265,7 +313,7 @@
                             <button>Узнать больше</button>
                         </div>
                         <div class="stomatology_card">
-                            <img src="./images/img15.webp" alt="">
+                            <img src="./images/img15.webp" alt="Стоматологическая практика">
                             <div class="stomatology_cards__text">
                                 <h3>Стоматологическая практика</h3>
                                 <p>Надежное, доступное печатание Chairside 3D</p>
@@ -274,7 +322,7 @@
                             
                         </div>
                         <div class="stomatology_card">
-                            <img src="./images/img16.webp" alt="">
+                            <img src="./images/img16.webp" alt="Ортодонтия">
                             <div class="stomatology_cards__text">
                                 <h3>Ортодонтия</h3>
                                 <p>Непрерывная Пропускная Способность, На Которую Можно Положиться</p>
@@ -284,11 +332,113 @@
                     </div>
                 </div>
             </section>
+            <section class="soft" id="soft">
+                <div class="soft_info">
+                    <h1>Программное обеспечение Formlabs</h1>
+                    <h3>Оптимизация процессов печати в PreForm</h3>
+                    <p>Конструируйте вашу модель в стандартном программном обеспечении CAD, тогда импортируйте архив STL или OBJ в наше программное обеспечение подготовки печати, PreForm. Подготовьте свою модель за считанные минуты, загрузите ее на принтер и позвольте ей построить.</p>
+                </div>
+                <div class="hr"></div>
+                <h3>Скачать программное обеспечение</h3>
+                <div class="soft_buttons">
+                    <div class="soft_button__left">
+                        <button>Скачать PreForm (Mac)</button>
+                        <p>OS X 10.10 или выше</p>
+                        <a>Требования</a>
+                    </div>
+                    <div class="soft_button__right">
+                        <button class="color-blue">Скачать PreForm (Windows)</button>
+                        <p>Windows 7 (64-разрядная) или выше</p>
+                        <a>Требования</a>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <div class="contacts_info">
+                    <h1>Наши контаткы</h1>
+                    <hr>
+                    <div class="contacts_info__content">
+                        <div>
+                            <div class="social">
+                                <p>telegramm / viber / whatsapp</p>
+                                <h4><a>+7 22 000-00-00</a></h4>
+                            </div>
+                            <div class="adress indent">
+                                <h4>г. Москва</h4>
+                                <h4>ул. Пушкина, д. 100, офис 30</h4>
+                            </div>
+                            <div class="time">
+                                <h4>Работаем с 8:30 - 19:30</h4>
+                            </div>
+                            <div class="contacts_button">
+                                <button class="color-blue popup_btn" data-popup="form">Связаться с нами</button c>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="phone">
+                                <p>городской</p>
+                                <h4>8 0 232 20-10-10</h4>
+                            </div>
+                            <div class="mail indent">
+                                <p>почта</p>
+                                <h4>info@gmail.com</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts_map">
+                    1
+                    <div id="map"></div>
+                </div>
+            </section>
         </main>
-        <footer>
-
+        <footer class="flex">
+            <div class="container">
+                <div>
+                    <p>ИНН: 000000</p>
+                </div>
+                <div>
+                    <p><a>Политика конфедонциальности</a></p>
+                </div>
+            </div>
         </footer>
 
+        
+        <div class="popup" data-popup = "form">
+            <div class="form_block flex">
+                <div class="circle close">
+                    <a href="#">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.940428 1.13551C0.886557 1.08164 0.886557 0.994299 0.940428 0.940428C0.994299 0.886557 1.08164 0.886557 1.13551 0.940428L11.0596 10.8645C11.1135 10.9184 11.1135 11.0057 11.0596 11.0596C11.0058 11.1135 10.9184 11.1135 10.8645 11.0596L0.940428 1.13551Z" fill="white" stroke="#606060"/>
+                        <path d="M1.13551 11.0596L1.48907 11.4132L1.13551 11.0596C1.08164 11.1135 0.994299 11.1135 0.940428 11.0596L0.588504 11.4115L0.940428 11.0596C0.886557 11.0058 0.886556 10.9184 0.940428 10.8645L10.8645 0.940428C10.9184 0.886557 11.0058 0.886557 11.0596 0.940428L11.4115 0.588504L11.0596 0.940428C11.1135 0.994299 11.1135 1.08164 11.0596 1.13551L11.4132 1.48907L11.0596 1.13551L1.13551 11.0596Z" fill="white" stroke="#606060"/>
+                        </svg>
+                    </a>
+                </div>
+                <form>
+                    <div class="form_text">
+                        <h3>Заполните форму ниже</h3>
+                        <p>и в ближайшее время мы свяжемся с Вами</p>
+                    </div>
+                    <div>
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="number" name="number" placeholder="Ваш номер телефона">
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="Ваш E-mail">
+                        <input type="file">
+                    </div>
+                    <button class="blue-color">Оставить заявку на звонок</button>
+                    <div class="captcha">
+                        fff
+                    </div>
+                    <p class="consent_text">Нажимая на кнопку вы даете свое согласие на обработку<br> ваших персональных данных</p>
+                </form>
+            </div>
+        </div>
+
         <script src="./scripts/slider.js"></script>
+        <script src="./scripts/main.js"></script>
+
+        
     </body>
 </html>
